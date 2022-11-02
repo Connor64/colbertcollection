@@ -1,0 +1,9 @@
+.pageHeader {
+    margin-top: 0;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: 0% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}

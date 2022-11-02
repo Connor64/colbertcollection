@@ -1,0 +1,185 @@
+﻿/* :root {
+    --mobileWidth: 930px;
+} */
+
+.navbar {
+    position: fixed;
+    height: 75%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 150;
+    transition: all 0.6s;
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 0px 0px 30px #000000;
+}
+
+#navbar-shrink {
+    height: 100px;
+    background-color: rgb(27, 47, 51, 1);
+    text-shadow: 0px 0px 0px black;
+}
+
+.banner {
+    position: relative;
+    top: 25%;
+
+    padding: 25px 0 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+    line-height: 110%;
+    transition: all 0.6s;
+
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7vw;
+
+    animation: line-height-grow 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-height-grow {
+    0% {
+        line-height: 7vh;
+    }
+    100% {
+        line-height: 15vh;
+    }
+}
+
+#banner-shrink {
+    font-size: 50px;
+    width: 65%;
+    padding-top: 0px;
+    margin-top: -0.5%;
+
+    animation: line-height-shrink 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-height-shrink {
+    100% {
+        line-height: 7vh;
+    }
+}
+
+/* Div containing all menu/navigation items at bottom of navbar */
+.link-container {
+    /* position: absolute; */
+    display: flex;
+    margin: auto;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s;
+}
+
+/* Navigation Links */
+.nav-links {
+    position: relative;
+
+    margin: 5vw 3vw 0 3vw;
+
+    font-size: 3vh;
+    font-family: inherit;
+    font-weight: bold;
+    color: white;
+
+    text-shadow: 0px 0px 10px #000000;
+    text-decoration: underline rgba(255, 255, 255, 0);
+
+    transition: all 0.2s;
+}
+
+.nav-links:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+#nav-links-shrink {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Mobile Version Formatting Below */
+@media screen and (max-width: 930px) {
+    .banner {
+        margin: auto;
+        width: 80%;
+        margin-top: 10vh;
+
+        position: relative;
+        top: 12%;
+
+        padding: 25px 0 25px 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+
+        text-align: justify;
+        text-align-last: justify;
+        text-justify: distribute;
+        overflow-wrap: break-word;
+        line-height: 10vh;
+
+        font-size: 15vw;
+        font-weight: bold;
+        font-family: 'Josefin Sans', monospace;
+    }
+
+    #banner-shrink {
+        font-size: 40px;
+        width: 44%;
+        padding-top: 0px;
+        margin-top: -0.5%;
+    
+        animation: line-height-shrink 0.6s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes line-height-shrink {
+        100% {
+            line-height: 6.5vh;
+        }
+    }
+
+    .link-container {
+        flex: 1;
+        flex-direction: column;
+        align-items: stretch;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    .nav-links {
+        background-color: rgba(27, 47, 51, 0.677);
+        margin: 2vh 0 2vh 0;
+        padding: 1vh 8vw 1vh 8vw;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgba(126, 142, 144, 0.677);
+        text-shadow: 0 -5px 20px rgba(0, 0, 0, 0.368);
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.318);
+        font-weight: lighter;
+
+        line-height: 6vh;
+        display: table-row;
+        text-align-last: justify;
+        text-justify: distribute;
+    }
+
+    .nav-links:hover {
+        /* font-size:  */
+        transform: scale(1.1, 1.1);
+        text-decoration-color: rgba(255, 255, 255, 0);
+    }
+
+    #nav-links-shrink {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
