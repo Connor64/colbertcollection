@@ -141,11 +141,15 @@
         text-shadow: 0 -5px 20px rgba(0, 0, 0, 0.368);
         box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.318);
         font-weight: lighter;
+        text-decoration: none;
+        font-family: monospace;
 
         line-height: 6vh;
-        display: table-row;
-        text-align-last: justify;
-        text-justify: distribute;
+        text-align: center;
+        letter-spacing: 0.5vw;
+        /* display: table-row; */
+        /* text-align-last: justify; */
+        /* text-justify: distribute; */
     }
 
     .nav-links:hover {
