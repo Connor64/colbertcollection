@@ -1,8 +1,4 @@
-﻿/* :root {
-    --mobileWidth: 930px;
-} */
-
-.navbar {
+﻿.navbar {
     position: fixed;
     height: 75%;
     width: 100%;
@@ -34,35 +30,19 @@
     text-align: center;
     font-weight: 100;
     font-family: 'Open Sans', sans-serif;
+    line-height: 7vw;
     font-size: 7vw;
-
-    animation: line-height-grow 0.6s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes line-height-grow {
-    0% {
-        line-height: 7vh;
-    }
-    100% {
-        line-height: 15vh;
-    }
 }
 
 #banner-shrink {
     font-size: 50px;
     width: 65%;
-    padding-top: 0px;
-    margin-top: -0.5%;
+    padding-top: 0;
+    margin: 0 auto;
 
-    animation: line-height-shrink 0.6s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes line-height-shrink {
-    100% {
-        line-height: 7vh;
-    }
+    top: 60%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 /* Div containing all menu/navigation items at bottom of navbar */
@@ -81,7 +61,8 @@
 .nav-links {
     position: relative;
 
-    margin: 5vw 3vw 0 3vw;
+    padding: 1.5vw 2vw;
+    margin: 3vw 3vw 0 3vw;
 
     font-size: 3vh;
     font-family: inherit;
@@ -106,16 +87,13 @@
 /* Mobile Version Formatting Below */
 @media screen and (max-width: 930px) {
     .banner {
-        margin: auto;
         width: 80%;
-        margin-top: 10vh;
-
+        
         position: relative;
         top: 12%;
-
+        
         padding: 25px 0 25px 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10vh auto;
 
         color: white;
 
@@ -123,8 +101,8 @@
         text-align-last: justify;
         text-justify: distribute;
         overflow-wrap: break-word;
-        line-height: 10vh;
 
+        line-height: 15vw;
         font-size: 15vw;
         font-weight: bold;
         font-family: 'Josefin Sans', monospace;
@@ -132,18 +110,16 @@
 
     #banner-shrink {
         font-size: 40px;
-        width: 44%;
-        padding-top: 0px;
-        margin-top: -0.5%;
-    
-        animation: line-height-shrink 0.6s;
-        animation-fill-mode: forwards;
-    }
-    
-    @keyframes line-height-shrink {
-        100% {
-            line-height: 6.5vh;
-        }
+        line-height: 40px;
+        width: 60%;
+        word-spacing: 100vw; 
+
+        padding: 0px;
+        margin-top: 0;
+
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 
     .link-container {
