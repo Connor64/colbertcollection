@@ -47,12 +47,12 @@
 
 /* Div containing all menu/navigation items at bottom of navbar */
 .link-container {
-    /* position: absolute; */
     display: flex;
     margin: auto;
     width: 75%;
     align-items: center;
     justify-content: center;
+    margin-top: 10vh;
 
     transition: all 0.2s;
 }
@@ -87,7 +87,7 @@
 /* Mobile Version Formatting Below */
 @media screen and (max-width: 930px) {
     .banner {
-        width: 80%;
+        width: 90%;
         
         position: relative;
         top: 12%;
@@ -97,13 +97,13 @@
 
         color: white;
 
-        text-align: justify;
-        text-align-last: justify;
-        text-justify: distribute;
+        text-align: center;
         overflow-wrap: break-word;
-
-        line-height: 15vw;
-        font-size: 15vw;
+        letter-spacing: 1.5vw;
+        
+        line-height: 20vw;
+        font-size: 16vw;
+        text-shadow: none;
         font-weight: bold;
         font-family: 'Josefin Sans', monospace;
     }
@@ -113,6 +113,7 @@
         line-height: 40px;
         width: 60%;
         word-spacing: 100vw; 
+        letter-spacing: 10px;
 
         padding: 0px;
         margin-top: 0;
