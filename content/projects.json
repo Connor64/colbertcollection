@@ -1,0 +1,7 @@
+{
+    "projects":[
+        {"name":"World Pieces", "data_prefix":"WorldPieces", "thumbnail":"WorldPieces-thumbnail.png"},
+        {"name":"Deflexion Redux", "data_prefix":"DeflexionRedux", "thumbnail":"DeflexionRedux-thumbnail.png"},
+        {"name":"The Archipelago", "data_prefix":"TheArchipelago", "thumbnail":"TheArchipelago-thumbnail.png"}
+    ]
+}

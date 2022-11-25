@@ -9,6 +9,7 @@
     padding: 0;
     background-color: rgba(240, 240, 240, 1);
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .1);
+    width: 100%;
 }
 
 .section {
@@ -38,14 +39,14 @@
     width: 75%;
 }
 
-#gallery {
+.gallery {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#gallery p {
+.gallery p {
     padding: 10px 0 20px 0;
 }
 
